@@ -1,5 +1,5 @@
 {% set name = "appmap" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/appmap-{{ version }}.tar.gz
-  sha256: b07d934e0494120c9461316c7300cc31f6900d695d41840c09a287b5dd1ab432
+  sha256: f4477791438fc5158d0a95ada7c8ff68f9e536bca2d7810683f4b16ba62cffc7
 
 build:
   number: 0
@@ -19,12 +19,13 @@ requirements:
   host:
     - poetry
     - pip
-    - python >=3.5,<4.0
+    - python >=3.6,<4.0
   run:
     - importlib-metadata >=0.8
     - inflection >=0.3.0,<0.4.0
-    - python >=3.5,<4.0
+    - python >=3.6,<4.0
     - pyyaml >=5.3.0,<5.4.0
+    - twisted >=21.2.0,<22.0.0
 
 test:
   imports:
