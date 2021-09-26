@@ -1,5 +1,5 @@
 {% set name = "appmap" %}
-{% set version = "1.2.0" %}
+{% set version = "1.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/appmap-{{ version }}.tar.gz
-  sha256: 880244893f549cff8338adc9de135ddf4fef4dded7b93feed9d77edc5fe46a12
+  sha256: 586bd77fe380f37e5369f2309177a05b773b1ea13127651bc8f06e042a06bfb6
 
 build:
   number: 0
